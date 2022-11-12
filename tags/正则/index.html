@@ -6,18 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://hiyizi.github.io">
-  <title>HIYIZI</title>
+  <title>Tag: 正则 | HIYIZI</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-    
-    <!-- <meta name="keywords" content="宜孜">
-    <meta name="description" content="还没有想好写什么"> -->
   
   <meta name="description" content="还没有想好写什么">
 <meta property="og:type" content="website">
 <meta property="og:title" content="HIYIZI">
-<meta property="og:url" content="https://hiyizi.github.io/index.html">
+<meta property="og:url" content="https://hiyizi.github.io/tags/%E6%AD%A3%E5%88%99/index.html">
 <meta property="og:site_name" content="HIYIZI">
 <meta property="og:description" content="还没有想好写什么">
 <meta property="og:locale" content="zh_CN">
@@ -213,165 +209,40 @@
           </div>
           <div id="js-content" class="content-ll">
             
-
-  
-    <article id="post-after" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2018/01/10/after/" target="_blank">富文本编辑器显示换行符</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2018/01/10/after/" class="archive-article-date">
-        <time datetime="2018-01-10T06:13:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-10</time>
-</a>
-
   
   
     
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>MS在 office word工具中为使用户能够清晰知道文档的段落信息，给用户提供了显示换行符号的功能，即在当前段落的最后面显示一个回车键的箭头，如下图：</p>
-<p><img src="http://sunjingwu.oss-cn-shanghai.aliyuncs.com/content/TIM%E6%88%AA%E5%9B%BE20180110152801.png"></p>
-<p><img src="http://sunjingwu.oss-cn-shanghai.aliyuncs.com/content/TIM%E6%88%AA%E5%9B%BE20180110152854.png"></p>
-<p>最好的方式就是通过伪元素<code>after</code>添加</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-class">.editing</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;↵&quot;</span>;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#989898</span>;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">text-indent</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">2px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>关键点：编辑器会为空的行添加<code>br</code>标签，导致换行符显示偏下一行。</p>
-<p>合理的方案是通过事件绑定的方式，移除br 标签。</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">伪元素</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">换行符</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">br</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2018/01/10/after/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-reg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+        <div class="archives">
     
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2017/12/14/reg/" target="_blank">正则替换回调在JAVA中的实现</a>
-  
-    </h1>
-  
-
-
-  
-  
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
 <a href="/2017/12/14/reg/" class="archive-article-date">
         <time datetime="2017-12-14T12:13:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
 </a>
 
+        </div>
+    	 
   
+    <h1 itemprop="name">
+	
+	  <a class="archive-article-title" href="/2017/12/14/reg/" target="_blank">正则替换回调在JAVA中的实现</a>
   
-    
-
+    </h1>
   
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>项目中需要将中文字符等特殊符号转位HTML的转义序列，用于HTML文档进行渲染，例如<br>例如：中国 -&gt; &amp;#x4e2d;&amp;#x56fd;</p>
-<h2 id="JS正则替换"><a href="#JS正则替换" class="headerlink" title="JS正则替换"></a>JS正则替换</h2><p>由于javascript 提供的replace方法制成回调，所以很容易解决该问题：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">encodeUnicode</span>(<span class="params">str</span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> str</span><br><span class="line">  <span class="keyword">var</span> reg = \\;</span><br><span class="line">  str = str.<span class="title function_">replace</span>(reg,<span class="title function_">funtion</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&amp;#x&quot;</span>+str.<span class="title function_">charCodeAt</span>(i).<span class="title function_">toString</span>(<span class="number">16</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">return</span> str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-
-<h2 id="JAVA如何实现"><a href="#JAVA如何实现" class="headerlink" title="JAVA如何实现"></a>JAVA如何实现</h2><p>因为java 中并没有类似的替换回调，所以需要通过java中的正则相关的类和方法进行实现：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ReplaceUtils</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">replaceWithFn</span><span class="params">(CharSequence input, String regexp, Method fn, <span class="type">int</span> group)</span> &#123;</span><br><span class="line">        <span class="type">Matcher</span> <span class="variable">m</span> <span class="operator">=</span> Pattern.compile(regexp).matcher(input);</span><br><span class="line">        <span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> Modifier.toString(fn.getModifiers()).indexOf(<span class="string">&quot;static&quot;</span>) &gt; -<span class="number">1</span> ?</span><br><span class="line">                    fn.getClass() : fn.getDeclaringClass().newInstance();</span><br><span class="line">            <span class="keyword">if</span> (fn.getReturnType() != String.class) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;replacement function must return type \&quot;String\&quot;.&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">while</span> (m.find()) &#123;</span><br><span class="line">                m.appendReplacement(sb, (String) fn.invoke(obj, m.group(group)));</span><br><span class="line">            &#125;</span><br><span class="line">            m.appendTail(sb);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            <span class="comment">//e.printStackTrace();</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">char2hex</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        String str=<span class="string">&quot;&lt;mo&gt;&amp;#x&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;s.length();i++)&#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">ch</span> <span class="operator">=</span> (<span class="type">int</span>)s.charAt(i);</span><br><span class="line">            <span class="type">String</span> <span class="variable">s4</span> <span class="operator">=</span> Integer.toHexString(ch);</span><br><span class="line">            str = str + s4+<span class="string">&quot;;&lt;/mo&gt;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> str;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>使用如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">char2Hex</span><span class="params">(String input)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">//StringBuffer input = new StringBuffer(&quot;中国的String&quot;);</span></span><br><span class="line">        System.out.println(<span class="string">&quot;input=&quot;</span> + input);</span><br><span class="line">        <span class="type">String</span> <span class="variable">result</span> <span class="operator">=</span> ReplaceUtils.replaceWithFn(</span><br><span class="line">            input,</span><br><span class="line">            <span class="string">&quot;([^\\u0000-\\u00FF])&quot;</span>,</span><br><span class="line">            ReplaceUtils.class.getMethod(<span class="string">&quot;char2hex&quot;</span>, String.class),</span><br><span class="line">            <span class="number">1</span></span><br><span class="line">        );</span><br><span class="line">        System.out.println(<span class="string">&quot;output=&quot;</span> + result);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (SecurityException e) &#123;</span><br><span class="line">        <span class="comment">//e.printStackTrace();</span></span><br><span class="line">        <span class="keyword">return</span> input;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (NoSuchMethodException e) &#123;</span><br><span class="line">        <span class="comment">//e.printStackTrace();</span></span><br><span class="line">        <span class="keyword">return</span> input;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>参考：</p>
-<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/4742183/using-functions-or-methods-in-javas-string-replaceall-regex">Using functions or methods in Java’s String.replaceAll() regex</a><br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000012147039">一道小小的题目引发对javascript支持正则表达式相关方法的探讨</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -387,147 +258,19 @@
 		</ul>
 	</div>
 
-    
+          
 
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2017/12/14/reg/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2017/12/14/hello-world/" target="_blank">第一篇章</a>
+    </div></section>
   
-    </h1>
-  
-
-
-  
-  
-<a href="/2017/12/14/hello-world/" class="archive-article-date">
-        <time datetime="2017-12-14T12:13:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>欢迎访问！  </p>
-<h2 id="写作背景和初衷"><a href="#写作背景和初衷" class="headerlink" title="写作背景和初衷"></a>写作背景和初衷</h2><p>​	一直就有写博客的想法。一方面记录一下自己的人生经历，以至于回首往事的时候不会感到因虚度年华而悔恨，也不会感到因碌碌无为而羞耻。初为人父，我也希望自己的博客有些不同，所以我也会把自己家小土豆的成长经历记录在内，当她长大时，能够看到一些有意思的东西。另一方面，作为一名互联网研发攻城狮，想记录一些在技术方面的成长经历、踩过的坑，通过文字表达出来，加深自己的认识和理解，同时希望能够对遇到类似问题的人们有一点点的帮助。  </p>
-<p>##主要记录内容</p>
-<ol>
-<li>技术类主要包括前端技术</li>
-<li>容器技术</li>
-<li>生活和宝宝成长经历</li>
-</ol>
-<h2 id="自我激励"><a href="#自我激励" class="headerlink" title="自我激励"></a>自我激励</h2><p>为了能够坚持写下去，希望规划一个激励办法，暂时没有想好。</p>
-<p>不知道怎么的最近喜欢上了榴莲，就暂定5篇博客奖励自己一次吃榴莲的机会吧。^_^</p>
 
     
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">其他</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/其他//" class="article-tag-list-link color3">其他</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2017/12/14/hello-world/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -567,10 +310,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
